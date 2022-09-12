@@ -16,7 +16,6 @@ public class FilmItem { // создаем поля айтемов
     }
 
 
-
     public int getId() {
         return id;
     }
@@ -40,9 +39,6 @@ public class FilmItem { // создаем поля айтемов
     public void setGenre(String genre) {
         this.genre = genre;
     }
-
-
-
 
 
 }

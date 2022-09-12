@@ -8,22 +8,21 @@ import ru.netology.meneger.ManagerFilms;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class ManagerFilmsTest {
-     ManagerFilms afisha = new ManagerFilms();
-     ManagerFilms limitFilms = new ManagerFilms(5);
+    ManagerFilms afisha = new ManagerFilms();
+    ManagerFilms limitFilms = new ManagerFilms(5);
 
 
-
-     FilmItem first = new FilmItem(1, "Бладшот", "боевик");
+    FilmItem first = new FilmItem(1, "Бладшот", "боевик");
     FilmItem second = new FilmItem(2, "Вперёд", "мультфильм");
-     FilmItem third = new FilmItem(3, "Отель Белград", "комедия");
-     FilmItem fourth = new FilmItem(4, "Джентельмены", "боевик");
-     FilmItem fifth = new FilmItem(5, "Человек-невидимка", "ужасы");
-     FilmItem sixth = new FilmItem(6, "Вечные", "фантастика");
-     FilmItem seventh = new FilmItem(7, "Главный герой", "фантастика");
-     FilmItem eighth = new FilmItem(8, "Последний богатырь: корень зла", "приключения");
-     FilmItem ninth = new FilmItem(9, "Пара из будущего", "комедия");
-     FilmItem tenth = new FilmItem(10, "Девятаев", "военный");
-     FilmItem eleventh = new FilmItem(11, "После", "драма");
+    FilmItem third = new FilmItem(3, "Отель Белград", "комедия");
+    FilmItem fourth = new FilmItem(4, "Джентельмены", "боевик");
+    FilmItem fifth = new FilmItem(5, "Человек-невидимка", "ужасы");
+    FilmItem sixth = new FilmItem(6, "Вечные", "фантастика");
+    FilmItem seventh = new FilmItem(7, "Главный герой", "фантастика");
+    FilmItem eighth = new FilmItem(8, "Последний богатырь: корень зла", "приключения");
+    FilmItem ninth = new FilmItem(9, "Пара из будущего", "комедия");
+    FilmItem tenth = new FilmItem(10, "Девятаев", "военный");
+    FilmItem eleventh = new FilmItem(11, "После", "драма");
 
     //проверка добавления фильма
     @Test
@@ -39,7 +38,7 @@ public class ManagerFilmsTest {
         ru.netology.FilmItem[] expected = new ru.netology.FilmItem[]{first, second, third, fourth, fifth};
 
         //проверка ожидаемого и фактического результата
-        Assertions.assertArrayEquals(expected,actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     //вывод в обратном порядке — фильмов меньше 10

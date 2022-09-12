@@ -17,7 +17,6 @@ public class ManagerFilms {
     }
 
 
-
     public int getLimit() {
         return limit;
     }
@@ -29,18 +28,12 @@ public class ManagerFilms {
     //добавление фильма в ленту (добавление элемента в массив)
     public void addFilm(FilmItem item) {
 
-        FilmItem [] tmp = new FilmItem[items.length + 1];// создадим новую линию массива
-        for (int i=0;i< items.length;i++){
-            tmp[i]= items[i]; // перебираем и фиксируем в новый массив тмп
+        FilmItem[] tmp = new FilmItem[items.length + 1];// создадим новую линию массива
+        for (int i = 0; i < items.length; i++) {
+            tmp[i] = items[i]; // перебираем и фиксируем в новый массив тмп
         }
-        tmp[tmp.length-1] = item;// создаем ячейку в массиве для последней переменной
-        items=tmp;
-
-
-
-
-
-
+        tmp[tmp.length - 1] = item;// создаем ячейку в массиве для последней переменной
+        items = tmp;
     }
 
     //выводим ленту фильмов — весь массив
