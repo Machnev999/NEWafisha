@@ -41,7 +41,7 @@ public class ManagerFilms {
         return items;
     }
 
-    //выводим ленту в обратном порядке/ ТЫ ЗАКОНЧИЛ ТУТ
+    //выводим ленту в обратном порядке/ Т
     public FilmItem[] getAll() {
         FilmItem[] items = findAll();
         int resultLength = 0;
